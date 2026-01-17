@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import FAQSection from "./faq-section";
+// import FAQSection from "./faq-section";
 
 export default function Home() {
   return (
@@ -74,23 +74,21 @@ export default function Home() {
           <div className="absolute top-10 right-[30%] animate-float animation-delay-100">
              <img src="/Group 27166.png" alt="" />
           </div>
-          <div className="absolute top-90 left-[7%] animate-float animation-delay-300">
+          <div className="absolute top-110 left-[7%] animate-float animation-delay-300">
             <img src="/Group 27165.png" alt="" />
           </div>
-          <div className="absolute top-80 right-[2%] animate-float animation-delay-500">
+          <div className="absolute top-110 right-[2%] animate-float animation-delay-500">
               <img src="/Group 27164.png" alt="" />
           </div>
 
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#FF9000] mb-6 mt-2 leading-tight animate-fadeInUp" style={{ fontFamily: 'var(--font-syne)' }}>
-            Building scalable<br />
-            digital growth with
+          Digital Marketing <br />
+That Drives <br />
+Real Business Growth
           </h1>
 
-          {/* Sub-headline */}
-          <h2 className="text-3xl md:text-5xl lg:text-7xl italic text-[#464646] mb-10 font-light animate-fadeInUp animation-delay-200" style={{ fontFamily: 'var(--font-instrument-serif)' }}>
-            strategy, design & technology
-          </h2>
+      
 
           {/* Description */}
           <p className="text-base md:text-sm text-[#6B6B6B] max-w-4xl mb-12 leading-relaxed animate-fadeInUp animation-delay-300">
@@ -177,13 +175,12 @@ export default function Home() {
                   <button 
                     className="text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 hover:shadow-lg"
                     style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}
-                  > <a href="/digital">
-                    Explore </a>
+                  >
+                    Explore
                     <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
                   </button>
-                
                 </div>
 
                 {/* Card 2: Website, App & Branding Services */}
@@ -669,60 +666,43 @@ export default function Home() {
     behind <span className="italic font-normal">our success</span>
   </h2>
 
-  {/* Profile Cards Slider */}
-  <div className="overflow-hidden mb-10 px-4 relative">
-    <style dangerouslySetInnerHTML={{__html: `
-      @keyframes scroll-right-to-left {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(calc(-100% / 2));
-        }
-      }
-      .slider-infinite {
-        animation: scroll-right-to-left 25s linear infinite;
-      }
-      .slider-infinite:hover {
-        animation-play-state: paused;
-      }
-    `}} />
-    <div className="flex slider-infinite">
-      {[
-        { name: "Shreya Gupta", role: "Graphic Designer", image: "/WhatsApp Image 2026-01-17 at 10.52.06 AM.jpeg" },
-        { name: "Praful Kumar", role: "A Video Editor and Graphic Designer", image: "/WhatsApp Image 2026-01-16 at 1.55.21 PM.jpeg" },
-        { name: "Syed Ali Zaddi", role: "Web & App Developer", image: "/WhatsApp Image 2026-01-16 at 1.56.10 PM.jpeg" }
-      ].concat([
-        { name: "Anas Ansari", role: "Web & App Developer <br />  SEO Expert", image: "/IMG-20241207-WA0010.jpg" },
-        { name: "Priyanka Chopra", role: "Social Media Specialist", image: "/WhatsApp Image 2026-01-16 at 1.55.21 PM.jpeg" },
-        { name: "Priyanka Chopra", role: "UI / UX Designer", image: "/WhatsApp Image 2026-01-16 at 1.56.10 PM.jpeg" }
-      ]).map((member, index) => (
-        <div
-          key={index}
-          className="flex-shrink-0 w-[90vw] sm:w-[400px] md:w-[350px] px-4"
-        >
-          <div
-            className="rounded-3xl p-2 shadow-md bg-yellow-300 hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-2"
-            style={{ border: '1px solid #DFF2E1' }}
-          >
-            <div className="relative w-full h-92 rounded-2xl overflow-hidden bg-yellow-300">
-              <Image
-                src={member.image}
-                alt={member.name}
-                fill
-                className="object-cover"
-              />
-              <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 w-[85%] bg-[#DFF2E1] rounded-b-3xl rounded-t-3xl px-2 py-2 text-center">
-                <h3 className="text-lg font-bold text-gray-900">
-                  {member.name}
-                </h3>
-                <p className="text-sm text-gray-700" dangerouslySetInnerHTML={{ __html: member.role }}></p>
-              </div>
-            </div>
+  {/* Profile Cards */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-10 px-4">
+    {[
+      { name: "Priyanka Chopra", role: "Wordpress Developer" },
+      { name: "Priyanka Chopra", role: "Social Media Specialist" },
+      { name: "Priyanka Chopra", role: "UI / UX Designer" }
+    ].map((member, index) => (
+      <div
+        key={index}
+        className={`rounded-3xl p-2 shadow-md bg-yellow-300 hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-2 animate-fadeInUp ${index === 0 ? 'animation-delay-100' : index === 1 ? 'animation-delay-200' : 'animation-delay-300'}`}
+        style={{ border: '1px solid #DFF2E1' }}
+      >
+        <div className="relative w-full h-92 rounded-2xl overflow-hidden bg-yellow-300">
+          <Image
+            src="/image 1.png"
+            alt={member.name}
+            fill
+            className="object-cover"
+          />
+          <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 w-[85%] bg-[#DFF2E1] rounded-b-3xl rounded-t-3xl px-2 py-2 text-center">
+            <h3 className="text-lg font-semibold text-gray-900">
+              {member.name}
+            </h3>
+            <p className="text-sm text-gray-700">{member.role}</p>
           </div>
         </div>
-      ))}
-    </div>
+      </div>
+    ))}
+  </div>
+
+  {/* Pagination Dots */}
+  <div className="flex justify-center items-center gap-2">
+    <span className="w-2.5 h-2.5 rounded-full bg-green-600"></span>
+    <span className="w-2.5 h-2.5 rounded-full bg-gray-300"></span>
+    <span className="w-2.5 h-2.5 rounded-full bg-gray-300"></span>
+    <span className="w-2.5 h-2.5 rounded-full bg-gray-300"></span>
+    <span className="w-2.5 h-2.5 rounded-full bg-gray-300"></span>
   </div>
 </div>
 
@@ -749,7 +729,7 @@ export default function Home() {
           </div>
 
           {/* FAQ Section */}
-          <FAQSection />
+          {/* <FAQSection /> */}
 
           {/* Footer */}
           <footer className="bg-gray-800 text-gray-300 py-16 px-6">
