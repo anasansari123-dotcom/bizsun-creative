@@ -83,9 +83,7 @@ export default function Home() {
 
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#FF9000] mb-6 mt-2 leading-tight animate-fadeInUp" style={{ fontFamily: 'var(--font-syne)' }}>
-          Digital Marketing <br />
-That Drives <br />
-Real Business Growth
+         Software Development
           </h1>
 
       

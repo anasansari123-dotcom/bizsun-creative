@@ -47,7 +47,7 @@ export default function Home() {
             <a href="#services" className="px-4 py-2 text-gray-400 hover:text-gray-500 font-medium transition-all duration-300 hover:scale-105 cursor-pointer">
               Services
             </a>
-            <Link href="/about" className="px-4 py-2 text-gray-400 hover:text-gray-500 font-medium transition-all duration-300 hover:scale-105">
+            <Link href="/about-us" className="px-4 py-2 text-gray-400 hover:text-gray-500 font-medium transition-all duration-300 hover:scale-105">
               About
             </Link>
             <Link href="/portfolio" className="px-4 py-2 text-gray-400 hover:text-gray-500 font-medium transition-all duration-300 hover:scale-105">
@@ -131,7 +131,60 @@ export default function Home() {
 
               {/* Service Cards */}
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                {/* Card 1: Digital Marketing */}
+                {/* Card 1: Software Development */}
+                <div className="bg-white rounded-[50px] p-8 flex flex-col border border-green-500 shadow-sm hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-2 animate-fadeInUp animation-delay-100">
+                  {/* Title and Illustration */}
+                  <div className="flex items-start justify-between mb-6">
+                    <h3 className="text-3xl font-bold text-black flex-1">Software Development</h3>
+                    <div className="flex items-center justify-center rounded-xl ml-4">
+<img src="/235722202_11102932 copy 1.png" alt="" className="" />                    </div>
+                  </div>
+                  
+                  <div className="flex-grow mb-6 space-y-4">
+                    <div className="flex items-start gap-3">
+                     <img src="/YERROW.png" alt="" />
+                      <div>
+                        <p className="font-semibold text-black">Custom Software Development</p>
+                        <p className="text-sm text-gray-600">Tailored solutions for your business needs</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                    <img src="/YERROW.png" alt="" />
+
+                      <div>
+                        <p className="font-semibold text-black">Enterprise Software Solutions</p>
+                        <p className="text-sm text-gray-600">Scalable systems for large organizations</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                    <img src="/YERROW.png" alt="" />
+
+                      <div>
+                        <p className="font-semibold text-black">API Development & Integration</p>
+                        <p className="text-sm text-gray-600">Seamless connectivity between systems</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                    <img src="/YERROW.png" alt="" />
+
+                      <div>
+                        <p className="font-semibold text-black">Software Maintenance & Support</p>
+                        <p className="text-sm text-gray-600">Ongoing updates and technical assistance</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <button 
+                    className="text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 hover:shadow-lg"
+                    style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}
+                  > <a href="/software">
+                    Explore </a>
+                    <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </button>
+                
+                </div>
                 <div className="bg-white rounded-[50px] p-8 flex flex-col border border-green-500 shadow-sm hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-2 animate-fadeInUp animation-delay-100">
                   {/* Title and Illustration */}
                   <div className="flex items-start justify-between mb-6">
@@ -330,8 +383,16 @@ export default function Home() {
                     <img src="/YERROW.png" alt="" />
 
                       <div>
-                        <p className="font-semibold text-black">Branding & Creative Design</p>
-                        <p className="text-sm text-gray-600">Logos, brand identity, creatives, and marketing assets</p>
+                        <p className="font-semibold text-black">Business Intelligence & Dashboards</p>
+                        <p className="text-sm text-gray-600">Real-time data visualization and insights</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                    <img src="/YERROW.png" alt="" />
+
+                      <div>
+                        <p className="font-semibold text-black">Growth Strategy & Consulting</p>
+                        <p className="text-sm text-gray-600">Data-driven strategies for business expansion</p>
                       </div>
                     </div>
                   
@@ -363,24 +424,32 @@ export default function Home() {
                     <img src="/YERROW.png" alt="" />
 
                       <div>
-                        <p className="font-semibold text-black">Website Design & Development</p>
-                        <p className="text-sm text-gray-600">Responsive, fast, and conversion-focused websites</p>
+                        <p className="font-semibold text-black">CRM Implementation & Customization</p>
+                        <p className="text-sm text-gray-600">Customer relationship management systems</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
                       <div>
-                        <p className="font-semibold text-black">UI/UX Design</p>
-                        <p className="text-sm text-gray-600">Clean, intuitive, and user-centric digital experiences</p>
+                        <p className="font-semibold text-black">Business Process Automation</p>
+                        <p className="text-sm text-gray-600">Streamline workflows and reduce manual tasks</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
                       <div>
-                        <p className="font-semibold text-black">Branding & Creative Design</p>
-                        <p className="text-sm text-gray-600">Logos, brand identity, creatives, and marketing assets</p>
+                        <p className="font-semibold text-black">Marketing Automation</p>
+                        <p className="text-sm text-gray-600">Automated campaigns and lead nurturing</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                    <img src="/YERROW.png" alt="" />
+
+                      <div>
+                        <p className="font-semibold text-black">Sales Pipeline Management</p>
+                        <p className="text-sm text-gray-600">Track and optimize sales processes</p>
                       </div>
                     </div>
                   
@@ -412,24 +481,32 @@ export default function Home() {
                     <img src="/YERROW.png" alt="" />
 
                       <div>
-                        <p className="font-semibold text-black">Website Design & Development</p>
-                        <p className="text-sm text-gray-600">Responsive, fast, and conversion-focused websites</p>
+                        <p className="font-semibold text-black">E-commerce Solutions</p>
+                        <p className="text-sm text-gray-600">Online stores and marketplace integrations</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
                       <div>
-                        <p className="font-semibold text-black">UI/UX Design</p>
-                        <p className="text-sm text-gray-600">Clean, intuitive, and user-centric digital experiences</p>
+                        <p className="font-semibold text-black">Healthcare Technology</p>
+                        <p className="text-sm text-gray-600">HIPAA-compliant systems and patient portals</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
                       <div>
-                        <p className="font-semibold text-black">Branding & Creative Design</p>
-                        <p className="text-sm text-gray-600">Logos, brand identity, creatives, and marketing assets</p>
+                        <p className="font-semibold text-black">FinTech Solutions</p>
+                        <p className="text-sm text-gray-600">Secure financial applications and payment systems</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                    <img src="/YERROW.png" alt="" />
+
+                      <div>
+                        <p className="font-semibold text-black">Education Technology</p>
+                        <p className="text-sm text-gray-600">Learning management systems and e-learning platforms</p>
                       </div>
                     </div>
                   
@@ -504,6 +581,11 @@ export default function Home() {
               <div className="w-full overflow-hidden">
                 <div className="flex items-center gap-3 md:gap-4 text-sm md:text-base animate-scroll-left whitespace-nowrap">
                   {/* First set of items */}
+                  <svg className="w-4 h-4 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                  <span className="font-bold text-black uppercase flex-shrink-0">SOFTWARE DEVELOPMENT</span>
+
                   <svg className="w-4 h-4 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
@@ -789,7 +871,7 @@ export default function Home() {
                   <h3 className="text-xs uppercase tracking-wider text-gray-400 mb-4">HOME</h3>
                   <ul className="space-y-2">
                     <li><Link href="/" className="text-gray-300 hover:text-white transition-colors">HOME</Link></li>
-                    <li><Link href="/about" className="text-gray-300 hover:text-white transition-colors">ABOUT</Link></li>
+                    <li><Link href="/about-us" className="text-gray-300 hover:text-white transition-colors">ABOUT</Link></li>
                     <li><Link href="/portfolio" className="text-gray-300 hover:text-white transition-colors">PORTFOLIO</Link></li>
                     <li><Link href="/services" className="text-gray-300 hover:text-white transition-colors">SERVICE</Link></li>
                   </ul>
