@@ -63,6 +63,7 @@ export default function Home() {
             Let&apos;s Collaborate
             <img src="/Background.png" alt="" />
           </button>
+          
         </header>
 
         {/* Hero Section */}
@@ -71,10 +72,10 @@ export default function Home() {
           <div className="absolute top-10 right-[30%] animate-float animation-delay-100">
             <img src="/Group 27166.png" alt="" />
           </div>
-          <div className="absolute top-[110px] left-[7%] animate-float animation-delay-300">
+          <div className="absolute top-[460px] left-[7%] animate-float animation-delay-300">
             <img src="/Group 27165.png" alt="" />
           </div>
-          <div className="absolute top-[110px] right-[2%] animate-float animation-delay-500">
+          <div className="absolute top-[410px] right-[2%] animate-float animation-delay-500">
             <img src="/Group 27164.png" alt="" />
           </div>
 
@@ -95,6 +96,7 @@ export default function Home() {
           <button className="text-white px-17 py-5 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
             Get in Touch
           </button>
+          <p className="pt-2 text-[#6B6B6B]">No commitments. Just clarity.</p>
 
           {/* Trusted By Section */}
         </main>
