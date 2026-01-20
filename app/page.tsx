@@ -173,15 +173,16 @@ export default function Home() {
                     </div>
                   </div>
                   
-                  <button 
+                  <Link 
+                    href="/software"
                     className="text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 hover:shadow-lg"
                     style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}
-                  > <a href="/software">
-                    Explore </a>
+                  >
+                    Explore
                     <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
-                  </button>
+                  </Link>
                 
                 </div>
                 <div className="bg-white rounded-[50px] p-8 flex flex-col border border-green-500 shadow-sm hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-2 animate-fadeInUp animation-delay-100">
@@ -226,15 +227,16 @@ export default function Home() {
                     </div>
                   </div>
                   
-                  <button 
+                  <Link 
+                    href="/digital"
                     className="text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 hover:shadow-lg"
                     style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}
-                  > <a href="/digital">
-                    Explore </a>
+                  >
+                    Explore
                     <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
-                  </button>
+                  </Link>
                 
                 </div>
 
@@ -277,17 +279,16 @@ export default function Home() {
                     
                   </div>
                   
-                  <button 
+                  <Link 
+                    href="/branding"
                     className="text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 hover:shadow-lg"
                     style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}
                   >
-                    <a href="/branding">
-                    Explore </a>
-                    
+                    Explore
                     <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
-                  </button>
+                  </Link>
                 </div>
 
                 {/* Card 3: App & Web Development */}
@@ -343,7 +344,8 @@ export default function Home() {
                     </div>
                   </div>
                   
-                  <button 
+                  <Link 
+                    href="/app-web-development"
                     className="text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 hover:shadow-lg"
                     style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}
                   >
@@ -351,7 +353,7 @@ export default function Home() {
                     <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
-                  </button>
+                  </Link>
                 </div>
                 {/* 4 */}
                 <div className="bg-white rounded-[50px] p-8 flex flex-col border border-green-500 shadow-sm">
@@ -400,7 +402,8 @@ export default function Home() {
                     
                   </div>
                   
-                  <button 
+                  <Link 
+                    href="/analytics"
                     className="text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 hover:shadow-lg"
                     style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}
                   >
@@ -408,7 +411,7 @@ export default function Home() {
                     <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
-                  </button>
+                  </Link>
                 </div>
                 {/* 5 */}
                 <div className="bg-white rounded-[50px] p-8 flex flex-col border border-green-500 shadow-sm">
@@ -457,7 +460,8 @@ export default function Home() {
                     
                   </div>
                   
-                  <button 
+                  <Link 
+                    href="/automation"
                     className="text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 hover:shadow-lg"
                     style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}
                   >
@@ -465,7 +469,7 @@ export default function Home() {
                     <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
-                  </button>
+                  </Link>
                 </div>
                 {/* 6 */}
                 <div className="bg-white rounded-[50px] p-8 flex flex-col border border-green-500 shadow-sm">
@@ -514,7 +518,8 @@ export default function Home() {
                     
                   </div>
                   
-                  <button 
+                  <Link 
+                    href="/industry-focused"
                     className="text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 hover:shadow-lg"
                     style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}
                   >
@@ -522,7 +527,7 @@ export default function Home() {
                     <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

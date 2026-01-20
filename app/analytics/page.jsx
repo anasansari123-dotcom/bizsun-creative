@@ -45,16 +45,16 @@ export default function Home() {
 
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#FF9000] mb-6 mt-2 leading-tight animate-fadeInUp" style={{ fontFamily: 'var(--font-syne)' }}>
-          Software Development <br />
-That Powers <br />
-Your Business Growth
+          Analytics & Growth Solutions <br />
+That Drive <br />
+Data-Driven Decisions
           </h1>
 
       
 
           {/* Description */}
           <p className="text-base md:text-lg text-[#6B6B6B] max-w-4xl mb-12 leading-relaxed animate-fadeInUp animation-delay-300">
-          We build custom software solutions tailored to your business needs. From enterprise systems to API integrations, <br /> we deliver scalable, secure, and maintainable software that drives real business value.          </p>
+          We turn your data into actionable insights. From analytics and reporting to conversion optimization and growth strategy, <br /> we help you make informed decisions that drive measurable business growth.          </p>
 
           {/* CTA Button */}
           <button className="text-white px-17 py-5 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
@@ -94,28 +94,28 @@ Your Business Growth
                 {/* Left: Text Content */}
                 <div>
                   <h2 className="text-4xl md:text-5xl lg:text-4xl font-bold text-black mb-8 leading-tight">
-                    Is your software limiting your business growth?
+                    Struggling to make sense of your business data?
                   </h2>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
-                      <p className="text-lg text-gray-700">Using generic software that doesn't fit your workflow?</p>
+                      <p className="text-lg text-gray-700">Have data but don't know what it means for your business?</p>
                     </li>
                     <li className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
-                      <p className="text-lg text-gray-700">Systems that don't scale with your business?</p>
+                      <p className="text-lg text-gray-700">Website traffic high but conversion rates low?</p>
                     </li>
                     <li className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
-                      <p className="text-lg text-gray-700">Struggling with system integrations and data silos?</p>
+                      <p className="text-lg text-gray-700">Need real-time insights but stuck with outdated reports?</p>
                     </li>
                     <li className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
-                      <p className="text-lg text-gray-700">Need ongoing support but can't find reliable developers?</p>
+                      <p className="text-lg text-gray-700">Looking for growth strategies but unsure where to start?</p>
                     </li>
                   </ul>
                 </div>
@@ -139,10 +139,10 @@ Your Business Growth
                 <div>
                   <p className="text-sm text-gray-500 uppercase tracking-wider mb-2">SOLUTION IN ACTION</p>
                   <h2 className="text-4xl md:text-5xl lg:text-4xl font-bold text-black mb-6 leading-tight">
-                    Our Approach to Software Development
+                    Our Approach to Analytics & Growth
                   </h2>
                   <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                    Our software development process is built on understanding your business needs first. We design and build custom solutions that integrate seamlessly with your existing systems, scale with your growth, and deliver measurable value. From initial planning to deployment and ongoing maintenance, we ensure your software works for your business—not against it.
+                    Our analytics approach starts with understanding your business goals and data sources. We set up comprehensive tracking, create clear dashboards, and provide actionable insights that drive decision-making. Through conversion optimization, growth strategy, and continuous monitoring, we help you identify opportunities, optimize performance, and scale your business with confidence.
                   </p>
                   <button 
                     className="text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl"
@@ -181,7 +181,7 @@ Your Business Growth
               {/* 1. What's Included in Our Digital Marketing Services */}
               <div className="mb-20">
                 <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold text-black mb-12">
-                  What&apos;s Included in Our Software Development <br /> Services
+                  What&apos;s Included in Our Analytics & Growth <br /> Solutions
                 </h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                   {/* Left: Services List */}
@@ -190,32 +190,32 @@ Your Business Growth
                     <img src="/YERROW.png" alt="" />
 
                       <div>
-                        <p className="font-semibold text-lg text-black">Custom Software Development</p>
-                        <p className="text-gray-700">Tailored solutions for your business needs</p>
+                        <p className="font-semibold text-lg text-black">Data Analytics & Reporting</p>
+                        <p className="text-gray-700">Actionable insights and performance tracking</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
                       <div>
-                        <p className="font-semibold text-lg text-black">Enterprise Software Solutions</p>
-                        <p className="text-gray-700">Scalable systems for large organizations</p>
+                        <p className="font-semibold text-lg text-black">Conversion Rate Optimization (CRO)</p>
+                        <p className="text-gray-700">Improve leads, sales, and ROI</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
                       <div>
-                        <p className="font-semibold text-lg text-black">API Development & Integration</p>
-                        <p className="text-gray-700">Seamless connectivity between systems</p>
+                        <p className="font-semibold text-lg text-black">Business Intelligence & Dashboards</p>
+                        <p className="text-gray-700">Real-time data visualization and insights</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
                       <div>
-                        <p className="font-semibold text-lg text-black">Software Maintenance & Support</p>
-                        <p className="text-gray-700">Ongoing updates and technical assistance</p>
+                        <p className="font-semibold text-lg text-black">Growth Strategy & Consulting</p>
+                        <p className="text-gray-700">Data-driven strategies for business expansion</p>
                       </div>
                     </div>
                   </div>
@@ -257,22 +257,22 @@ Your Business Growth
                   <div className="flex items-start gap-3">
                   <img src="/YERROW.png" alt="" />
 
-                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Growing businesses</span> needing custom software solutions</p>
+                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">E-commerce businesses</span> needing conversion optimization</p>
                   </div>
                   <div className="flex items-start gap-3">
                   <img src="/YERROW.png" alt="" />
 
-                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Enterprises</span> requiring scalable and integrated systems</p>
+                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Growing companies</span> requiring data-driven insights</p>
                   </div>
                   <div className="flex items-start gap-3">
                   <img src="/YERROW.png" alt="" />
 
-                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Companies</span> struggling with system integrations</p>
+                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Organizations</span> needing business intelligence dashboards</p>
                   </div>
                   <div className="flex items-start gap-3">
                   <img src="/YERROW.png" alt="" />
 
-                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Organizations</span> needing ongoing software maintenance</p>
+                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Businesses</span> looking for growth strategy consulting</p>
                   </div>
                 </div>
               </div>

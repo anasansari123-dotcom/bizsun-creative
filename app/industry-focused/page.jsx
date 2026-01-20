@@ -45,16 +45,16 @@ export default function Home() {
 
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#FF9000] mb-6 mt-2 leading-tight animate-fadeInUp" style={{ fontFamily: 'var(--font-syne)' }}>
-          Software Development <br />
-That Powers <br />
-Your Business Growth
+          Industry-Focused Solutions <br />
+That Understand <br />
+Your Business Needs
           </h1>
 
       
 
           {/* Description */}
           <p className="text-base md:text-lg text-[#6B6B6B] max-w-4xl mb-12 leading-relaxed animate-fadeInUp animation-delay-300">
-          We build custom software solutions tailored to your business needs. From enterprise systems to API integrations, <br /> we deliver scalable, secure, and maintainable software that drives real business value.          </p>
+          We specialize in industry-specific solutions. From e-commerce platforms to healthcare technology, FinTech, and education systems, <br /> we build solutions tailored to your industry's unique requirements and compliance needs.          </p>
 
           {/* CTA Button */}
           <button className="text-white px-17 py-5 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
@@ -94,28 +94,28 @@ Your Business Growth
                 {/* Left: Text Content */}
                 <div>
                   <h2 className="text-4xl md:text-5xl lg:text-4xl font-bold text-black mb-8 leading-tight">
-                    Is your software limiting your business growth?
+                    Need industry-specific solutions that understand your business?
                   </h2>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
-                      <p className="text-lg text-gray-700">Using generic software that doesn't fit your workflow?</p>
+                      <p className="text-lg text-gray-700">E-commerce platform not meeting your business needs?</p>
                     </li>
                     <li className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
-                      <p className="text-lg text-gray-700">Systems that don't scale with your business?</p>
+                      <p className="text-lg text-gray-700">Healthcare systems not HIPAA-compliant?</p>
                     </li>
                     <li className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
-                      <p className="text-lg text-gray-700">Struggling with system integrations and data silos?</p>
+                      <p className="text-lg text-gray-700">FinTech solutions lacking security and compliance?</p>
                     </li>
                     <li className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
-                      <p className="text-lg text-gray-700">Need ongoing support but can't find reliable developers?</p>
+                      <p className="text-lg text-gray-700">Education technology not engaging students effectively?</p>
                     </li>
                   </ul>
                 </div>
@@ -139,10 +139,10 @@ Your Business Growth
                 <div>
                   <p className="text-sm text-gray-500 uppercase tracking-wider mb-2">SOLUTION IN ACTION</p>
                   <h2 className="text-4xl md:text-5xl lg:text-4xl font-bold text-black mb-6 leading-tight">
-                    Our Approach to Software Development
+                    Our Approach to Industry-Focused Solutions
                   </h2>
                   <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                    Our software development process is built on understanding your business needs first. We design and build custom solutions that integrate seamlessly with your existing systems, scale with your growth, and deliver measurable value. From initial planning to deployment and ongoing maintenance, we ensure your software works for your business—not against it.
+                    Our industry-focused approach starts with deep understanding of your sector's unique challenges, regulations, and requirements. We design and build solutions that are not just technically sound, but also compliant, secure, and tailored to your industry's workflows. From e-commerce to healthcare, FinTech to education, we deliver solutions that work for your specific business context.
                   </p>
                   <button 
                     className="text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl"
@@ -181,7 +181,7 @@ Your Business Growth
               {/* 1. What's Included in Our Digital Marketing Services */}
               <div className="mb-20">
                 <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold text-black mb-12">
-                  What&apos;s Included in Our Software Development <br /> Services
+                  What&apos;s Included in Our Industry-Focused <br /> Solutions
                 </h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                   {/* Left: Services List */}
@@ -190,32 +190,32 @@ Your Business Growth
                     <img src="/YERROW.png" alt="" />
 
                       <div>
-                        <p className="font-semibold text-lg text-black">Custom Software Development</p>
-                        <p className="text-gray-700">Tailored solutions for your business needs</p>
+                        <p className="font-semibold text-lg text-black">E-commerce Solutions</p>
+                        <p className="text-gray-700">Online stores and marketplace integrations</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
                       <div>
-                        <p className="font-semibold text-lg text-black">Enterprise Software Solutions</p>
-                        <p className="text-gray-700">Scalable systems for large organizations</p>
+                        <p className="font-semibold text-lg text-black">Healthcare Technology</p>
+                        <p className="text-gray-700">HIPAA-compliant systems and patient portals</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
                       <div>
-                        <p className="font-semibold text-lg text-black">API Development & Integration</p>
-                        <p className="text-gray-700">Seamless connectivity between systems</p>
+                        <p className="font-semibold text-lg text-black">FinTech Solutions</p>
+                        <p className="text-gray-700">Secure financial applications and payment systems</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
                       <div>
-                        <p className="font-semibold text-lg text-black">Software Maintenance & Support</p>
-                        <p className="text-gray-700">Ongoing updates and technical assistance</p>
+                        <p className="font-semibold text-lg text-black">Education Technology</p>
+                        <p className="text-gray-700">Learning management systems and e-learning platforms</p>
                       </div>
                     </div>
                   </div>
@@ -257,22 +257,22 @@ Your Business Growth
                   <div className="flex items-start gap-3">
                   <img src="/YERROW.png" alt="" />
 
-                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Growing businesses</span> needing custom software solutions</p>
+                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">E-commerce businesses</span> needing custom online store solutions</p>
                   </div>
                   <div className="flex items-start gap-3">
                   <img src="/YERROW.png" alt="" />
 
-                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Enterprises</span> requiring scalable and integrated systems</p>
+                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Healthcare organizations</span> requiring HIPAA-compliant systems</p>
                   </div>
                   <div className="flex items-start gap-3">
                   <img src="/YERROW.png" alt="" />
 
-                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Companies</span> struggling with system integrations</p>
+                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Financial institutions</span> needing secure FinTech solutions</p>
                   </div>
                   <div className="flex items-start gap-3">
                   <img src="/YERROW.png" alt="" />
 
-                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Organizations</span> needing ongoing software maintenance</p>
+                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Educational institutions</span> requiring learning management systems</p>
                   </div>
                 </div>
               </div>

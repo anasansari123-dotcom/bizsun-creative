@@ -45,16 +45,16 @@ export default function Home() {
 
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#FF9000] mb-6 mt-2 leading-tight animate-fadeInUp" style={{ fontFamily: 'var(--font-syne)' }}>
-          Software Development <br />
+          App & Web Development <br />
 That Powers <br />
-Your Business Growth
+Real Business Growth
           </h1>
 
       
 
           {/* Description */}
           <p className="text-base md:text-lg text-[#6B6B6B] max-w-4xl mb-12 leading-relaxed animate-fadeInUp animation-delay-300">
-          We build custom software solutions tailored to your business needs. From enterprise systems to API integrations, <br /> we deliver scalable, secure, and maintainable software that drives real business value.          </p>
+          We build scalable, secure, and high-performance web and mobile applications that help businesses grow faster and smarter. <br /> From intuitive mobile apps to robust web platforms, we create digital systems that support long-term success.          </p>
 
           {/* CTA Button */}
           <button className="text-white px-17 py-5 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
@@ -94,28 +94,28 @@ Your Business Growth
                 {/* Left: Text Content */}
                 <div>
                   <h2 className="text-4xl md:text-5xl lg:text-4xl font-bold text-black mb-8 leading-tight">
-                    Is your software limiting your business growth?
+                    Is Your App or Website Limiting Your Business Growth?
                   </h2>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
-                      <p className="text-lg text-gray-700">Using generic software that doesn't fit your workflow?</p>
+                      <p className="text-lg text-gray-700">Mobile app performance issues affecting user experience?</p>
                     </li>
                     <li className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
-                      <p className="text-lg text-gray-700">Systems that don't scale with your business?</p>
+                      <p className="text-lg text-gray-700">Web application not scaling with your business needs?</p>
                     </li>
                     <li className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
-                      <p className="text-lg text-gray-700">Struggling with system integrations and data silos?</p>
+                      <p className="text-lg text-gray-700">Need cross-platform solutions but unsure which technology to use?</p>
                     </li>
                     <li className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
-                      <p className="text-lg text-gray-700">Need ongoing support but can't find reliable developers?</p>
+                      <p className="text-lg text-gray-700">Struggling with app maintenance and updates?</p>
                     </li>
                   </ul>
                 </div>
@@ -139,10 +139,10 @@ Your Business Growth
                 <div>
                   <p className="text-sm text-gray-500 uppercase tracking-wider mb-2">SOLUTION IN ACTION</p>
                   <h2 className="text-4xl md:text-5xl lg:text-4xl font-bold text-black mb-6 leading-tight">
-                    Our Approach to Software Development
+                    Our Approach to App & Web Development
                   </h2>
                   <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                    Our software development process is built on understanding your business needs first. We design and build custom solutions that integrate seamlessly with your existing systems, scale with your growth, and deliver measurable value. From initial planning to deployment and ongoing maintenance, we ensure your software works for your business—not against it.
+                    Our development process is driven by clarity, collaboration, and performance. We start by understanding your business requirements, users, and long-term goals. From planning architecture to UI/UX design, development, testing, and deployment, every step is carefully executed. We focus on clean code, secure systems, and scalable infrastructure—ensuring your digital product performs reliably today and in the future.
                   </p>
                   <button 
                     className="text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl"
@@ -181,7 +181,7 @@ Your Business Growth
               {/* 1. What's Included in Our Digital Marketing Services */}
               <div className="mb-20">
                 <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold text-black mb-12">
-                  What&apos;s Included in Our Software Development <br /> Services
+                  What&apos;s Included in Our App & Web Development <br /> Services
                 </h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                   {/* Left: Services List */}
@@ -190,32 +190,40 @@ Your Business Growth
                     <img src="/YERROW.png" alt="" />
 
                       <div>
-                        <p className="font-semibold text-lg text-black">Custom Software Development</p>
-                        <p className="text-gray-700">Tailored solutions for your business needs</p>
+                        <p className="font-semibold text-lg text-black">Android App Development</p>
+                        <p className="text-gray-700">Scalable and secure Android applications</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
                       <div>
-                        <p className="font-semibold text-lg text-black">Enterprise Software Solutions</p>
-                        <p className="text-gray-700">Scalable systems for large organizations</p>
+                        <p className="font-semibold text-lg text-black">iOS App Development</p>
+                        <p className="text-gray-700">High-performance apps for Apple devices</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
                       <div>
-                        <p className="font-semibold text-lg text-black">API Development & Integration</p>
-                        <p className="text-gray-700">Seamless connectivity between systems</p>
+                        <p className="font-semibold text-lg text-black">Cross-Platform App Development</p>
+                        <p className="text-gray-700">Flutter / React Native apps for faster deployment</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
 
                       <div>
-                        <p className="font-semibold text-lg text-black">Software Maintenance & Support</p>
-                        <p className="text-gray-700">Ongoing updates and technical assistance</p>
+                        <p className="font-semibold text-lg text-black">Web Application Development</p>
+                        <p className="text-gray-700">Custom dashboards, portals, and SaaS solutions</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                    <img src="/YERROW.png" alt="" />
+
+                      <div>
+                        <p className="font-semibold text-lg text-black">App Maintenance & Support</p>
+                        <p className="text-gray-700">Performance optimization, updates, and security</p>
                       </div>
                     </div>
                   </div>
@@ -257,22 +265,22 @@ Your Business Growth
                   <div className="flex items-start gap-3">
                   <img src="/YERROW.png" alt="" />
 
-                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Growing businesses</span> needing custom software solutions</p>
+                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Startups</span> needing mobile or web apps to launch their business</p>
                   </div>
                   <div className="flex items-start gap-3">
                   <img src="/YERROW.png" alt="" />
 
-                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Enterprises</span> requiring scalable and integrated systems</p>
+                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Growing businesses</span> requiring scalable web applications</p>
                   </div>
                   <div className="flex items-start gap-3">
                   <img src="/YERROW.png" alt="" />
 
-                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Companies</span> struggling with system integrations</p>
+                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Companies</span> needing cross-platform mobile solutions</p>
                   </div>
                   <div className="flex items-start gap-3">
                   <img src="/YERROW.png" alt="" />
 
-                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Organizations</span> needing ongoing software maintenance</p>
+                    <p className="text-lg text-gray-700"><span className="font-semibold text-black">Organizations</span> looking for app maintenance and support</p>
                   </div>
                 </div>
               </div>
