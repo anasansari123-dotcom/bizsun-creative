@@ -28,36 +28,35 @@ export default function Home() {
         <Header />
 
         {/* Hero Section */}
-        <main className="container mx-auto px-6 py-20 flex flex-col items-center text-center relative min-h-[80vh]">
-          {/* Labels with arrows */}
-          <div className="absolute top-10 right-[30%] animate-float animation-delay-100">
-            <img src="/Group 27166.png" alt="" />
+        <main className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20 flex flex-col items-center text-center relative min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh]">
+          {/* Labels with arrows - hidden on mobile */}
+          <div className="hidden md:block absolute top-10 right-[30%] animate-float animation-delay-100">
+            <img src="/Group 27166.png" alt="" className="w-16 h-auto" />
           </div>
-          <div className="absolute top-[460px] left-[7%] animate-float animation-delay-300">
-            <img src="/Group 27165.png" alt="" />
+          <div className="hidden md:block absolute top-[460px] left-[7%] animate-float animation-delay-300">
+            <img src="/Group 27165.png" alt="" className="w-16 h-auto" />
           </div>
-          <div className="absolute top-[410px] right-[2%] animate-float animation-delay-500">
-            <img src="/Group 27164.png" alt="" />
+          <div className="hidden md:block absolute top-[410px] right-[2%] animate-float animation-delay-500">
+            <img src="/Group 27164.png" alt="" className="w-16 h-auto" />
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#FF9000] mb-6 mt-2 leading-tight animate-fadeInUp" style={{ fontFamily: 'var(--font-syne)' }}>
-            Websites & Branding<br />
-            That Build Trust<br />
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-[#FF9000] mb-4 sm:mb-6 mt-2 leading-tight animate-fadeInUp px-4" style={{ fontFamily: 'var(--font-syne)' }}>
+            Websites & Branding<br className="hidden sm:block" />
+            That Build Trust<br className="hidden sm:block" />
             and Drive Growth
           </h1>
 
-
-
           {/* Description */}
-          <p className="text-base md:text-lg text-[#6B6B6B] max-w-4xl mb-12 leading-relaxed animate-fadeInUp animation-delay-300">
-            We don’t just run campaigns — we build data-driven strategies that attract the right audience, generate <br /> qualified leads, and turn attention into revenue.          </p>
+          <p className="text-sm sm:text-base md:text-lg text-[#6B6B6B] max-w-4xl mb-8 sm:mb-12 leading-relaxed animate-fadeInUp animation-delay-300 px-4">
+            We don't just run campaigns — we build data-driven strategies that attract the right audience, generate <br className="hidden sm:block" /> qualified leads, and turn attention into revenue.
+          </p>
 
           {/* CTA Button */}
-          <button className="text-white px-17 py-5 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          <button className="text-white px-6 sm:px-12 md:px-17 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
             Get in Touch
           </button>
-          <p className="pt-2 text-[#6B6B6B]">No commitments. Just clarity.</p>
+          <p className="pt-2 text-sm sm:text-base text-[#6B6B6B]">No commitments. Just clarity.</p>
 
           {/* Trusted By Section */}
         </main>
@@ -80,7 +79,7 @@ export default function Home() {
 
         <section
           id="services"
-          className="w-full py-20 px-6 bg-white"
+          className="w-full py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-white"
           style={{
             background: 'linear-gradient(to bottom right, rgba(100, 203, 113, 0.1), rgba(255, 240, 150, 0.2))'
 
@@ -89,17 +88,17 @@ export default function Home() {
         >
           <div className="container mx-auto max-w-7xl">
             {/* Top Section: Problem Identification */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16 md:mb-20">
               {/* Left: Text Content */}
               <div>
-                <h2 className="text-4xl md:text-5xl lg:text-4xl font-bold text-black mb-8 leading-tight">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 sm:mb-8 leading-tight">
                   Is your website or brand holding your business back?
                 </h2>
-                <ul className="space-y-4">
+                <ul className="space-y-3 sm:space-y-4">
                   <li className="flex items-start gap-3">
-                    <img src="/YERROW.png" alt="" />
+                    <img src="/YERROW.png" alt="" className="w-5 h-5 flex-shrink-0 mt-0.5" />
 
-                    <p className="text-lg text-gray-700">Website looks good but doesn’t convert visitors?</p>
+                    <p className="text-base sm:text-lg text-gray-700">Website looks good but doesn't convert visitors?</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <img src="/YERROW.png" alt="" />
