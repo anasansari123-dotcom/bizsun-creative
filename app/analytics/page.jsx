@@ -33,18 +33,18 @@ export default function Home() {
         {/* Hero Section */}
         <main className="container mx-auto px-6 py-20 flex flex-col items-center text-center relative min-h-[80vh]">
           {/* Labels with arrows */}
-          <div className="absolute top-10 right-[30%] animate-float animation-delay-100">
+          <div className="absolute top-10 right-[30%] animate-float animation-delay-100 hidden sm:block">
              <img src="/Group 27166.png" alt="" />
           </div>
-          <div className="absolute top-110 left-[7%] animate-float animation-delay-300">
+          <div className="absolute top-110 left-[7%] animate-float animation-delay-300 hidden sm:block">
             <img src="/Group 27165.png" alt="" />
           </div>
-          <div className="absolute top-110 right-[2%] animate-float animation-delay-500">
+          <div className="absolute top-110 right-[2%] animate-float animation-delay-500 hidden sm:block">
               <img src="/Group 27164.png" alt="" />
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#FF9000] mb-6 mt-2 leading-tight animate-fadeInUp" style={{ fontFamily: 'var(--font-syne)' }}>
+          <h1 className="text-4xl md:text-7xl lg:text-7xl font-bold text-[#FF9000] mb-6 mt-2 leading-tight animate-fadeInUp" style={{ fontFamily: 'var(--font-syne)' }}>
           Analytics & Growth Solutions <br />
 That Drive <br />
 Data-Driven Decisions
@@ -144,12 +144,13 @@ Data-Driven Decisions
                   <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                     Our analytics approach starts with understanding your business goals and data sources. We set up comprehensive tracking, create clear dashboards, and provide actionable insights that drive decision-making. Through conversion optimization, growth strategy, and continuous monitoring, we help you identify opportunities, optimize performance, and scale your business with confidence.
                   </p>
-                  <button 
-                    className="text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl"
+                  <Link 
+                    href="/contact"
+                    className="text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl inline-block"
                     style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}
                   >
                     Questions? Talk to us
-                  </button>
+                  </Link>
                 </div>
 
                 {/* Right: Four-Step Process Grid */}
@@ -560,14 +561,14 @@ Data-Driven Decisions
                 <p className="text-base md:text-lg text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed">
                   From strategy to execution, we help brands grow with clarity, consistency, and thoughtfully crafted digital solutions.
                 </p>
-                <button className="bg-green-200 text-gray-800 px-8 py-4 rounded-full font-semibold hover:bg-green-300 transition-all duration-300 flex items-center gap-3 mx-auto hover:scale-105 hover:shadow-lg">
+                <Link href="/contact" className="bg-green-200 w-[20%] text-gray-800 px-8 py-4 rounded-full font-semibold hover:bg-green-300 transition-all duration-300 flex items-center gap-3 mx-auto hover:scale-105 hover:shadow-lg">
                   Let&apos;s Collaborate
                   <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1">
                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
                   </div>
-                </button>
+                </Link>
               </div>
 </div>
  </section>

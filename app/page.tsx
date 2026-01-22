@@ -40,8 +40,8 @@ export default function Home() {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-[#FF9000] mb-6 mt-2 leading-tight animate-fadeInUp" style={{ fontFamily: 'var(--font-syne)' }}>
-            Building scalable<br />
+          <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold text-[#FF9000] mb-6 mt-2 leading-tight animate-fadeInUp" style={{ fontFamily: 'var(--font-syne)' }}>
+            Building scalable<br className="hidden sm:block" />
             digital growth with
           </h1>
 
@@ -56,9 +56,9 @@ export default function Home() {
           </p>
 
           {/* CTA Button */}
-          <button className="text-white px-6 sm:px-12 md:px-17 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          <Link href="/contact" className="text-white px-6 sm:px-12 md:px-17 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400 inline-block" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
             Get in Touch
-          </button>
+          </Link>
 
           {/* Trusted By Section */}
         </main>
@@ -320,7 +320,7 @@ export default function Home() {
                <div className="bg-white rounded-[50px] p-8 flex flex-col border border-green-500 shadow-sm hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-2 animate-fadeInUp animation-delay-300">
                 {/* Title and Illustration */}
                 <div className="flex items-start justify-between mb-6">
-                  <h3 className="text-3xl font-bold text-black flex-1">App & Web Development</h3>
+                  <h3 className="text-3xl font-bold text-black flex-1">Analytics & Growth Solutions</h3>
                   <div className="flex items-center justify-center rounded-xl ml-4">
                     <img src="/235722202_11102932 copy 1.png" alt="" className="" />                    </div>
 
@@ -550,6 +550,19 @@ export default function Home() {
 
           </div>
           {/* Services List - Infinite Slider */}
+          <style dangerouslySetInnerHTML={{
+            __html: `
+              @keyframes scroll-left-mobile {
+                0% { transform: translateX(0); }
+                100% { transform: translateX(-50%); }
+              }
+              @media (max-width: 768px) {
+                .animate-scroll-left {
+                  animation: scroll-left-mobile 15s linear infinite !important;
+                }
+              }
+            `
+          }} />
           <div className="w-full overflow-hidden">
             <div className="flex items-center gap-3 md:gap-4 text-sm md:text-base animate-scroll-left whitespace-nowrap">
               {/* First set of items */}
@@ -724,7 +737,7 @@ export default function Home() {
               </h2>
 
               {/* Profile Cards Slider */}
-              <div className="overflow-hidden mb-10 px-4 relative">
+              <div className="overflow-hidden mb-10 relative">
                 <style dangerouslySetInnerHTML={{
                   __html: `
       @keyframes scroll-right-to-left {
@@ -741,6 +754,11 @@ export default function Home() {
       }
       .slider-infinite:hover {
         animation-play-state: paused;
+      }
+      @media (max-width: 640px) {
+        .slider-infinite {
+          animation: scroll-right-to-left 30s linear infinite;
+        }
       }
     `
                 }} />
@@ -764,7 +782,7 @@ export default function Home() {
                   ].map((member, index) => (
                     <div
                       key={index}
-                      className="flex-shrink-0 w-[90vw] sm:w-[400px] md:w-[350px] px-4"
+                      className="flex-shrink-0 w-screen sm:w-[400px] md:w-[350px] px-4"
                     >
                       <div
                         className="rounded-3xl p-2 shadow-md bg-yellow-300 hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-2"
@@ -803,14 +821,14 @@ export default function Home() {
               <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed">
                 From strategy to execution, we help brands grow with clarity, consistency, and thoughtfully crafted digital solutions.
               </p>
-              <button className="bg-green-200 text-gray-800 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base font-semibold hover:bg-green-300 transition-all duration-300 flex items-center gap-3 mx-auto hover:scale-105 hover:shadow-lg">
+              <Link href="/contact" className="bg-green-200 text-gray-800 px-6 sm:px-8 py-3 sm:py-4 w-[20%] rounded-full text-sm sm:text-base font-semibold hover:bg-green-300 transition-all duration-300 flex items-center gap-3 mx-auto hover:scale-105 hover:shadow-lg">
                 Let&apos;s Collaborate
                 <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-green-600 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1">
                   <svg className="w-3 h-3 sm:w-4 sm:h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </div>
-              </button>
+              </Link>
             </div>
 
           </div>
@@ -832,14 +850,14 @@ export default function Home() {
               <div className="mb-6">
                 <div className="flex items-center gap-3 mb-2">
                   <h2 className="text-4xl md:text-5xl font-bold text-white">LET&apos;S</h2>
-                  <button className="w-12 h-12 rounded-lg bg-green-600 flex items-center justify-center hover:bg-green-700 transition-colors flex-shrink-0">
+                  <Link href="/contact" className="w-12 h-12 rounded-lg bg-green-600 flex items-center justify-center hover:bg-green-700 transition-colors flex-shrink-0">
                     <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M7 7h10v10" />
                     </svg>
-                  </button>
+                  </Link>
                 </div>
                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">WORK TOGETHER</h2>
-                <button className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center gap-3">
+                <Link href="/contact" className="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors flex items-center gap-3">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                   </svg>
@@ -849,7 +867,7 @@ export default function Home() {
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                   </svg>
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -859,30 +877,29 @@ export default function Home() {
               <ul className="space-y-2">
                 <li><Link href="/" className="text-gray-300 hover:text-white transition-colors">HOME</Link></li>
                 <li><Link href="/about-us" className="text-gray-300 hover:text-white transition-colors">ABOUT</Link></li>
-                <li><Link href="/portfolio" className="text-gray-300 hover:text-white transition-colors">PORTFOLIO</Link></li>
-                <li><Link href="/services" className="text-gray-300 hover:text-white transition-colors">SERVICE</Link></li>
+                <li><a href="/Bizson Creative Production2.pptx" download="Bizson Creative Production2.pptx" className="text-gray-300 hover:text-white transition-colors">PORTFOLIO</a></li>
+                <li><Link href="/#services" className="text-gray-300 hover:text-white transition-colors">SERVICE</Link></li>
               </ul>
             </div>
 
             <div>
               <h3 className="text-xs uppercase tracking-wider text-gray-400 mb-4">CLIENTS</h3>
               <ul className="space-y-2">
-                <li><Link href="/clients" className="text-gray-300 hover:text-white transition-colors">CLIENTS</Link></li>
                 <li><Link href="/contact" className="text-gray-300 hover:text-white transition-colors">CONTACTS</Link></li>
-                <li><Link href="/gallery" className="text-gray-300 hover:text-white transition-colors">GALLERY</Link></li>
-                <li><Link href="/clients" className="text-gray-300 hover:text-white transition-colors">CLIENTS</Link></li>
-                <li><Link href="/news" className="text-gray-300 hover:text-white transition-colors">NEWS</Link></li>
+                <li><Link href="/join-our-team" className="text-gray-300 hover:text-white transition-colors">CAREER</Link></li>
               </ul>
             </div>
 
             <div>
               <h3 className="text-xs uppercase tracking-wider text-gray-400 mb-4">PORTFOLIO</h3>
               <ul className="space-y-2">
-                <li><Link href="/services/digital-marketing" className="text-gray-300 hover:text-white transition-colors">DIGITAL MARKETING SERVICES</Link></li>
-                <li><Link href="/services/website-branding" className="text-gray-300 hover:text-white transition-colors">WEBSITE, APP & BRANDING SERVICES</Link></li>
-                <li><Link href="/services/app-development" className="text-gray-300 hover:text-white transition-colors">MOBILE & WEB APP DEVELOPMENT</Link></li>
-                <li><Link href="/services/analytics" className="text-gray-300 hover:text-white transition-colors">ANALYTICS & GROWTH SOLUTIONS</Link></li>
-                <li><Link href="/services/automation" className="text-gray-300 hover:text-white transition-colors">AUTOMATION & CRM SOLUTIONS</Link></li>
+                <li><Link href="/software" className="text-gray-300 hover:text-white transition-colors">SOFTWARE DEVELOPMENT</Link></li>
+                <li><Link href="/digital" className="text-gray-300 hover:text-white transition-colors">DIGITAL MARKETING SERVICES</Link></li>
+                <li><Link href="/branding" className="text-gray-300 hover:text-white transition-colors">WEBSITE, APP & BRANDING SERVICES</Link></li>
+                <li><Link href="/app-web-development" className="text-gray-300 hover:text-white transition-colors">MOBILE & WEB APP DEVELOPMENT</Link></li>
+                <li><Link href="/analytics" className="text-gray-300 hover:text-white transition-colors">ANALYTICS & GROWTH SOLUTIONS</Link></li>
+                <li><Link href="/automation" className="text-gray-300 hover:text-white transition-colors">AUTOMATION & CRM SOLUTIONS</Link></li>
+                <li><Link href="/industry-focused" className="text-gray-300 hover:text-white transition-colors">INDUSTRY-FOCUSED SOLUTIONS</Link></li>
               </ul>
             </div>
           </div>

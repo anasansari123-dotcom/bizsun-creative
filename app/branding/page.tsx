@@ -31,13 +31,13 @@ export default function Home() {
         <main className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20 flex flex-col items-center text-center relative min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh]">
           {/* Labels with arrows - hidden on mobile */}
           <div className="hidden md:block absolute top-10 right-[30%] animate-float animation-delay-100">
-            <img src="/Group 27166.png" alt="" className="w-16 h-auto" />
+            <img src="/Group 27166.png" alt="" />
           </div>
           <div className="hidden md:block absolute top-[460px] left-[7%] animate-float animation-delay-300">
-            <img src="/Group 27165.png" alt="" className="w-16 h-auto" />
+            <img src="/Group 27165.png" alt="" />
           </div>
           <div className="hidden md:block absolute top-[410px] right-[2%] animate-float animation-delay-500">
-            <img src="/Group 27164.png" alt="" className="w-16 h-auto" />
+            <img src="/Group 27164.png" alt=""/>
           </div>
 
           {/* Main Headline */}
@@ -53,9 +53,9 @@ export default function Home() {
           </p>
 
           {/* CTA Button */}
-          <button className="text-white px-6 sm:px-12 md:px-17 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          <Link href="/contact" className="text-white px-6 sm:px-12 md:px-17 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400 inline-block" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
             Get in Touch
-          </button>
+          </Link>
           <p className="pt-2 text-sm sm:text-base text-[#6B6B6B]">No commitments. Just clarity.</p>
 
           {/* Trusted By Section */}
@@ -149,12 +149,13 @@ export default function Home() {
                   We focus on creating clear, consistent, and conversion-focused digital
                   experiences that build trust and guide users toward action.</p>
 
-                <button
-                  className="text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl"
+                <Link
+                  href="/contact"
+                  className="text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl inline-block"
                   style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}
                 >
                   Questions? Talk to us
-                </button>
+                </Link>
 
                 <h2 className="text-4xl md:text-5xl lg:text-4xl font-bold text-black mb-6 leading-tight">
                   Our Approach to Digital Marketing
@@ -256,12 +257,12 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold text-black mb-12">
                 Why Businesses Choose Us
               </h2>
-              <div className="flex flex-wrap gap-2 ">
-                <img src="/digital 2.1.png" alt="" />
-                <img src="/digital 2.2.png" alt="" />
-                <img src="/digital 2.3.png" alt="" />
-                <img src="/digital 2.4.png" alt="" />
-                <img src="/digital 2.5.png" alt="" />
+              <div className="flex flex-wrap md:flex-nowrap gap-2 md:gap-4">
+                <img src="/digital 2.1.png" alt="" className="flex-shrink-0 w-32 md:w-60 h-auto object-contain" />
+                <img src="/digital 2.2.png" alt="" className="flex-shrink-0 w-32 md:w-60 h-auto object-contain" />
+                <img src="/digital 2.3.png" alt="" className="flex-shrink-0 w-32 md:w-60 h-auto object-contain" />
+                <img src="/digital 2.4.png" alt="" className="flex-shrink-0 w-32 md:w-60 h-auto object-contain" />
+                <img src="/digital 2.5.png" alt="" className="flex-shrink-0 w-32 md:w-60 h-auto object-contain" />
               </div>
             </div>
 
@@ -414,40 +415,40 @@ export default function Home() {
         >
           <div className="container mx-auto max-w-7xl">
             {/* Header */}
-            <div className="flex flex-col ml-[60px] md:flex-row justify-between items-start md:items-center mb-12">
-              <div className="ml-12">
-                <p className="text-sm text-gray-400 uppercase tracking-wider mb-2">TESTIMONIALS</p>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 sm:mb-12 px-4">
+              <div>
+                <p className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider mb-2">TESTIMONIALS</p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
                   WHAT MY CLIENTS SAY
                 </h2>
               </div>
-              <div className="mt-4 md:mt-0 text-right mr-[23%]">
-                <p className="text-sm text-gray-400">Total Reviews</p>
-                <p className="text-2xl md:text-3xl font-bold text-[#CACACE]">323</p>
+              <div className="mt-4 md:mt-0 text-left md:text-right">
+                <p className="text-xs sm:text-sm text-gray-400">Total Reviews</p>
+                <p className="text-xl sm:text-2xl md:text-3xl font-bold text-[#CACACE]">323</p>
               </div>
             </div>
 
             {/* Main Content Area */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8 ml-[72px]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8 px-4">
               {/* Main Testimonial Card */}
-              <div className="relative rounded-2xl overflow-hidden shadow-lg h-96 lg:h-[360px] ml-10">
+              <div className="relative rounded-2xl overflow-hidden shadow-lg h-64 sm:h-80 md:h-96 lg:h-[360px]">
                 <div className="relative w-full h-full">
                   <Image
                     src="/Mask group (1).png"
                     alt="Client testimonial"
                     fill
-                    className=""
+                    className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                 </div>
               </div>
 
               {/* Facts & Numbers Card */}
-              <div className="bg-[#FFD59F] rounded-2xl p-8 md:p-12 flex flex-col justify-center shadow-lg w-[50%] ml-5">
-                <p className="text-sm text-[#1B1D1E99] uppercase tracking-wider mb-[136px]">FACTS & NUMBERS</p>
-                <div className="text-7xl md:text-3xl font-bold text-[#1B1D1E] mb-4">91%</div>
-                <p className="text-xl md:text-[15px] text-[#1B1D1E]">
-                  clients recommend our <br /> services.
+              <div className="bg-[#FFD59F] rounded-2xl p-6 sm:p-8 md:p-12 flex flex-col justify-center shadow-lg">
+                <p className="text-xs sm:text-sm text-[#1B1D1E99] uppercase tracking-wider mb-4 sm:mb-8">FACTS & NUMBERS</p>
+                <div className="text-5xl sm:text-6xl md:text-7xl lg:text-3xl font-bold text-[#1B1D1E] mb-4">91%</div>
+                <p className="text-base sm:text-lg md:text-xl lg:text-[15px] text-[#1B1D1E]">
+                  clients recommend our <br className="hidden sm:block" /> services.
                 </p>
               </div>
             </div>
@@ -515,7 +516,7 @@ export default function Home() {
             </h2>
 
             {/* Profile Cards Slider */}
-            <div className="overflow-hidden mb-10 px-4 relative">
+            <div className="overflow-hidden mb-10 relative">
               <style dangerouslySetInnerHTML={{
                 __html: `
       @keyframes scroll-right-to-left {
@@ -528,9 +529,15 @@ export default function Home() {
       }
       .slider-infinite {
         animation: scroll-right-to-left 25s linear infinite;
+        width: max-content;
       }
       .slider-infinite:hover {
         animation-play-state: paused;
+      }
+      @media (max-width: 640px) {
+        .slider-infinite {
+          animation: scroll-right-to-left 30s linear infinite;
+        }
       }
     `}} />
               <div className="flex slider-infinite">
@@ -545,7 +552,7 @@ export default function Home() {
                 ]).map((member, index) => (
                   <div
                     key={index}
-                    className="flex-shrink-0 w-[90vw] sm:w-[400px] md:w-[350px] px-4"
+                    className="flex-shrink-0 w-screen sm:w-[400px] md:w-[350px] px-4"
                   >
                     <div
                       className="rounded-3xl p-2 shadow-md bg-yellow-300 hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-2"
@@ -584,14 +591,14 @@ export default function Home() {
               <p className="text-base md:text-lg text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed">
                 From strategy to execution, we help brands grow with clarity, consistency, and thoughtfully crafted digital solutions.
               </p>
-              <button className="bg-green-200 text-gray-800 px-8 py-4 rounded-full font-semibold hover:bg-green-300 transition-all duration-300 flex items-center gap-3 mx-auto hover:scale-105 hover:shadow-lg">
+              <Link href="/contact" className="bg-green-200 w-[20%] text-gray-800 px-8 py-4 rounded-full font-semibold hover:bg-green-300 transition-all duration-300 flex items-center gap-3 mx-auto hover:scale-105 hover:shadow-lg">
                 Let&apos;s Collaborate
                 <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </div>
-              </button>
+              </Link>
             </div>
           </div>
         </section>

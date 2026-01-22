@@ -47,10 +47,10 @@ export default function Header() {
       </nav>
 
       {/* Desktop CTA Button */}
-      <button className="hidden md:flex bg-green-600 text-white px-4 lg:px-6 py-2 lg:py-3 rounded-full text-sm lg:text-base font-medium hover:bg-green-700 transition-all duration-300 items-center gap-2 hover:scale-105 hover:shadow-lg">
+      <Link href="/contact" className="hidden md:flex bg-green-600 text-white px-4 lg:px-6 py-2 lg:py-3 rounded-full text-sm lg:text-base font-medium hover:bg-green-700 transition-all duration-300 items-center gap-2 hover:scale-105 hover:shadow-lg">
         Let&apos;s Collaborate
         <img src="/Background.png" alt="" className="w-4 h-4" />
-      </button>
+      </Link>
 
       {/* Mobile Menu Button */}
       <button
@@ -108,16 +108,20 @@ export default function Header() {
               Contact us
             </Link>
             <Link 
-              href="/career" 
+              href="/join-our-team" 
               onClick={() => setIsMenuOpen(false)}
               className="px-4 py-3 text-gray-700 hover:text-gray-900 font-medium transition-all duration-300 rounded-lg hover:bg-green-50"
             >
               Career
             </Link>
-            <button className="mt-2 bg-green-600 text-white px-6 py-3 rounded-full font-medium hover:bg-green-700 transition-all duration-300 flex items-center justify-center gap-2">
+            <Link 
+              href="/contact" 
+              onClick={() => setIsMenuOpen(false)}
+              className="mt-2 bg-green-600 text-white px-6 py-3 rounded-full font-medium hover:bg-green-700 transition-all duration-300 flex items-center justify-center gap-2"
+            >
               Let&apos;s Collaborate
               <img src="/Background.png" alt="" className="w-4 h-4" />
-            </button>
+            </Link>
           </nav>
         </div>
       )}

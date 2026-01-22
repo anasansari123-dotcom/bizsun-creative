@@ -111,9 +111,9 @@ export default function Home() {
         <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-4xl mx-auto mb-6 sm:mb-8 leading-relaxed">
           Whether you&apos;re a startup or an established brand, we&apos;re here to help you grow with clarity, creativity, and confidence.
         </p>
-        <button className="bg-[#249631] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full sm:rounded-4xl text-sm sm:text-base md:text-lg font-semibold hover:bg-green-700 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+        <Link href="/contact" className="bg-[#249631] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full sm:rounded-4xl text-sm sm:text-base md:text-lg font-semibold hover:bg-green-700 transition-all duration-300 hover:scale-105 hover:shadow-lg inline-block">
           Let&apos;s Collaborate
-        </button>
+        </Link>
       </section>
 
       {/* Footer */}
