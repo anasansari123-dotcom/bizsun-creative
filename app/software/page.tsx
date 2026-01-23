@@ -144,13 +144,11 @@ Your Business Growth
                   <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                     Our software development process is built on understanding your business needs first. We design and build custom solutions that integrate seamlessly with your existing systems, scale with your growth, and deliver measurable value. From initial planning to deployment and ongoing maintenance, we ensure your software works for your business—not against it.
                   </p>
-                  <Link 
-                    href="/contact"
-                    className="text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl inline-block"
-                    style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}
-                  >
-                    Questions? Talk to us
-                  </Link>
+                  {/* CTA Button */}
+          <Link href="/contact" className="text-white cursor-pointer px-6 sm:px-12 md:px-6 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          Questions? Talk to us
+
+          </Link>
                 </div>
 
                 {/* Right: Four-Step Process Grid */}
@@ -567,14 +565,11 @@ Your Business Growth
                 <p className="text-base md:text-lg text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed">
                   From strategy to execution, we help brands grow with clarity, consistency, and thoughtfully crafted digital solutions.
                 </p>
-                <Link href="/contact" className="bg-green-200 w-[20%] text-gray-800 px-8 py-4 rounded-full font-semibold hover:bg-green-300 transition-all duration-300 flex items-center gap-3 mx-auto hover:scale-105 hover:shadow-lg">
-                  Let&apos;s Collaborate
-                  <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
-                  </div>
-                </Link>
+                     {/* CTA Button */}
+          <Link href="/contact" className="text-white cursor-pointer px-6 sm:px-12 md:px-6 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          Let&apos;s Collaborate
+           <img src="/Background (1).png" alt="" className="inline ml-3 mb-1" />
+          </Link>
               </div>
 </div>
  </section>

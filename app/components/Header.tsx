@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="container mx-auto px-4 sm:px-6 py-4 sm:py-6 flex items-center justify-between relative">
       {/* Logo */}
-      <div className="flex items-center gap-3">
+      <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity duration-300">
         <Image
           src="/logo.png"
           alt="Bizsun Creative Logo"
@@ -18,16 +18,16 @@ export default function Header() {
           height={50}
           className="w-24 sm:w-32 md:w-[150px] h-auto"
         />
-      </div>
+      </Link>
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex items-center gap-6 bg-white/40 p-2 rounded-2xl text-black border-white border-1 shadow-lg backdrop-blur-sm">
         <Link href="/" className="px-4 py-2 text-gray-400 hover:text-gray-500 font-medium transition-all duration-300 hover:scale-105">
           Home
         </Link>
-        <a href="#services" className="px-4 py-2 text-gray-400 hover:text-gray-500 font-medium transition-all duration-300 hover:scale-105 cursor-pointer">
+        <Link href="/#services" className="px-4 py-2 text-gray-400 hover:text-gray-500 font-medium transition-all duration-300 hover:scale-105">
           Services
-        </a>
+        </Link>
         <Link href="/about-us" className="px-4 py-2 text-gray-400 hover:text-gray-500 font-medium transition-all duration-300 hover:scale-105">
           About
         </Link>
@@ -78,13 +78,13 @@ export default function Header() {
             >
               Home
             </Link>
-            <a 
-              href="#services" 
+            <Link 
+              href="/#services" 
               onClick={() => setIsMenuOpen(false)}
-              className="px-4 py-3 text-gray-700 hover:text-gray-900 font-medium transition-all duration-300 rounded-lg hover:bg-green-50 cursor-pointer"
+              className="px-4 py-3 text-gray-700 hover:text-gray-900 font-medium transition-all duration-300 rounded-lg hover:bg-green-50"
             >
               Services
-            </a>
+            </Link>
             <Link 
               href="/about-us" 
               onClick={() => setIsMenuOpen(false)}

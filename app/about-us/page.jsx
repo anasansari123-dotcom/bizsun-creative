@@ -111,9 +111,10 @@ export default function Home() {
         <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-4xl mx-auto mb-6 sm:mb-8 leading-relaxed">
           Whether you&apos;re a startup or an established brand, we&apos;re here to help you grow with clarity, creativity, and confidence.
         </p>
-        <Link href="/contact" className="bg-[#249631] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full sm:rounded-4xl text-sm sm:text-base md:text-lg font-semibold hover:bg-green-700 transition-all duration-300 hover:scale-105 hover:shadow-lg inline-block">
+        <Link href="/contact" className="text-white cursor-pointer px-6 sm:px-12 md:px-6 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
           Let&apos;s Collaborate
-        </Link>
+           <img src="/Background (1).png" alt="" className="inline ml-3 mb-1" />
+          </Link>
       </section>
 
       {/* Footer */}

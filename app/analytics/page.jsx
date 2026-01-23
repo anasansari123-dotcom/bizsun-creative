@@ -57,9 +57,9 @@ Data-Driven Decisions
           We turn your data into actionable insights. From analytics and reporting to conversion optimization and growth strategy, <br /> we help you make informed decisions that drive measurable business growth.          </p>
 
           {/* CTA Button */}
-          <button className="text-white px-17 py-5 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          <Link href="/contact" className="text-white px-17 py-5 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400 inline-block" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
             Get in Touch
-          </button>
+          </Link>
 
           {/* Trusted By Section */}
         </main>
@@ -144,13 +144,12 @@ Data-Driven Decisions
                   <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                     Our analytics approach starts with understanding your business goals and data sources. We set up comprehensive tracking, create clear dashboards, and provide actionable insights that drive decision-making. Through conversion optimization, growth strategy, and continuous monitoring, we help you identify opportunities, optimize performance, and scale your business with confidence.
                   </p>
-                  <Link 
-                    href="/contact"
-                    className="text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl inline-block"
-                    style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}
-                  >
-                    Questions? Talk to us
-                  </Link>
+                 
+                       {/* CTA Button */}
+          <Link href="/contact" className="text-white cursor-pointer px-6 sm:px-12 md:px-6 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          Questions? Talk to us
+
+          </Link>
                 </div>
 
                 {/* Right: Four-Step Process Grid */}
@@ -390,99 +389,99 @@ Data-Driven Decisions
             
 
           {/* Testimonials Section */}
-          <section 
-            className="w-full py-20 px-6"
-            style={{
-              background: 'linear-gradient(to bottom, rgba(100, 203, 113, 0.05), rgba(255, 255, 255, 0.9))'
-            }}
-          >
-            <div className="container mx-auto max-w-7xl">
-              {/* Header */}
-              <div className="flex flex-col ml-15 md:flex-row justify-between items-start md:items-center mb-12">
-                <div className="ml-12">
-                  <p className="text-sm text-gray-400 uppercase tracking-wider mb-2">TESTIMONIALS</p>
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
-                    WHAT MY CLIENTS SAY
-                  </h2>
-                </div>
-                <div className="mt-4 md:mt-0 text-right mr-[23%]">
-                  <p className="text-sm text-gray-400">Total Reviews</p>
-                  <p className="text-2xl md:text-3xl font-bold text-[#CACACE]">323</p>
-                </div>
+          <section
+          className="w-full py-20 px-6"
+          style={{
+            background: 'linear-gradient(to bottom, rgba(100, 203, 113, 0.05), rgba(255, 255, 255, 0.9))'
+          }}
+        >
+          <div className="container mx-auto max-w-7xl">
+            {/* Header */}
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 sm:mb-12 px-4">
+              <div>
+                <p className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider mb-2">TESTIMONIALS</p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
+                  WHAT MY CLIENTS SAY
+                </h2>
               </div>
-
-              {/* Main Content Area */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8 ml-18">
-                {/* Main Testimonial Card */}
-                <div className="relative rounded-2xl overflow-hidden shadow-lg h-96 lg:h-90 ml-10">
-                  <div className="relative w-full h-full">
-                    <Image
-                      src="/Mask group (1).png"
-                      alt="Client testimonial"
-                      fill
-                      className=""
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-                  </div>
-                </div>
-
-                {/* Facts & Numbers Card */}
-                <div className="bg-[#FFD59F] rounded-2xl p-8 md:p-12 flex flex-col justify-center shadow-lg w-[50%] ml-5">
-                  <p className="text-sm text-[#1B1D1E99] uppercase tracking-wider mb-34">FACTS & NUMBERS</p>
-                  <div className="text-7xl md:text-3xl font-bold text-[#1B1D1E] mb-4">91%</div>
-                  <p className="text-xl md:text-[15px] text-[#1B1D1E]">
-                    clients recommend our <br /> services.
-                  </p>
-                </div>
-              </div>
-
-              {/* Bottom Testimonial Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                {[1, 2, 3].map((item) => (
-                  <div key={item} className={`bg-white rounded-2xl p-6 shadow-lg relative hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-2 animate-fadeInUp ${item === 1 ? 'animation-delay-100' : item === 2 ? 'animation-delay-200' : 'animation-delay-300'}`}>
-                    {/* Social Icons */}
-                    <div className="absolute top-4 right-4 flex gap-2">
-                      <div className="w-6 h-6 rounded-full bg-green-600"></div>
-                      <div className="w-6 h-6 rounded-full bg-green-600"></div>
-                      <div className="w-6 h-6 rounded-full bg-green-600"></div>
-                    </div>
-                    
-                    <div className="mb-4">
-                      <h3 className="text-lg font-bold text-gray-800 mb-1">Emily Johnson</h3>
-                      <p className="text-sm text-gray-500">USA, California</p>
-                    </div>
-
-                    {/* Stars */}
-                    <div className="flex gap-1 mb-4">
-                      {[1, 2, 3, 4, 5].map((star) => (
-                        <svg key={star} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-
-                    <p className="text-gray-700 leading-relaxed">
-                      Damien&apos;s photography doesn&apos;t just capture moments; it captures emotions. Hes work is simply mesmerizing.
-                    </p>
-                  </div>
-                ))}
-              </div>
-
-              {/* Navigation Controls */}
-              <div className="flex justify-center gap-3">
-                <button className="w-12 h-12 rounded-lg bg-green-600 text-white flex items-center justify-center hover:bg-green-700 transition-all duration-300 hover:scale-110 hover:shadow-lg">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                  </svg>
-                </button>
-                <button className="w-12 h-12 rounded-lg bg-green-600 text-white flex items-center justify-center hover:bg-green-700 transition-all duration-300 hover:scale-110 hover:shadow-lg">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
+              <div className="mt-4 md:mt-0 text-left md:text-right">
+                <p className="text-xs sm:text-sm text-gray-400">Total Reviews</p>
+                <p className="text-xl sm:text-2xl md:text-3xl font-bold text-[#CACACE]">323</p>
               </div>
             </div>
-          </section>
+
+            {/* Main Content Area */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8 px-4">
+              {/* Main Testimonial Card */}
+              <div className="relative rounded-2xl overflow-hidden shadow-lg h-64 sm:h-80 md:h-96 lg:h-[360px]">
+                <div className="relative w-full h-full">
+                  <Image
+                    src="/Mask group (1).png"
+                    alt="Client testimonial"
+                    fill
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                </div>
+              </div>
+
+              {/* Facts & Numbers Card */}
+              <div className="bg-[#FFD59F] rounded-2xl p-6 sm:p-8 md:p-12 flex flex-col justify-center shadow-lg">
+                <p className="text-xs sm:text-sm text-[#1B1D1E99] uppercase tracking-wider mb-4 sm:mb-8">FACTS & NUMBERS</p>
+                <div className="text-5xl sm:text-6xl md:text-7xl lg:text-3xl font-bold text-[#1B1D1E] mb-4">91%</div>
+                <p className="text-base sm:text-lg md:text-xl lg:text-[15px] text-[#1B1D1E]">
+                  clients recommend our <br className="hidden sm:block" /> services.
+                </p>
+              </div>
+            </div>
+
+            {/* Bottom Testimonial Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              {[1, 2, 3].map((item) => (
+                <div key={item} className={`bg-white rounded-2xl p-6 shadow-lg relative hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-2 animate-fadeInUp ${item === 1 ? 'animation-delay-100' : item === 2 ? 'animation-delay-200' : 'animation-delay-300'}`}>
+                  {/* Social Icons */}
+                  <div className="absolute top-4 right-4 flex gap-2">
+                    <div className="w-6 h-6 rounded-full bg-green-600"></div>
+                    <div className="w-6 h-6 rounded-full bg-green-600"></div>
+                    <div className="w-6 h-6 rounded-full bg-green-600"></div>
+                  </div>
+
+                  <div className="mb-4">
+                    <h3 className="text-lg font-bold text-gray-800 mb-1">Emily Johnson</h3>
+                    <p className="text-sm text-gray-500">USA, California</p>
+                  </div>
+
+                  {/* Stars */}
+                  <div className="flex gap-1 mb-4">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <svg key={star} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+
+                  <p className="text-gray-700 leading-relaxed">
+                    Damien&apos;s photography doesn&apos;t just capture moments; it captures emotions. Hes work is simply mesmerizing.
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            {/* Navigation Controls */}
+            <div className="flex justify-center gap-3">
+              <button className="w-12 h-12 rounded-lg bg-green-600 text-white flex items-center justify-center hover:bg-green-700 transition-all duration-300 hover:scale-110 hover:shadow-lg">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button className="w-12 h-12 rounded-lg bg-green-600 text-white flex items-center justify-center hover:bg-green-700 transition-all duration-300 hover:scale-110 hover:shadow-lg">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
 
           {/* Team Section */}
           <section 
@@ -561,14 +560,11 @@ Data-Driven Decisions
                 <p className="text-base md:text-lg text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed">
                   From strategy to execution, we help brands grow with clarity, consistency, and thoughtfully crafted digital solutions.
                 </p>
-                <Link href="/contact" className="bg-green-200 w-[20%] text-gray-800 px-8 py-4 rounded-full font-semibold hover:bg-green-300 transition-all duration-300 flex items-center gap-3 mx-auto hover:scale-105 hover:shadow-lg">
-                  Let&apos;s Collaborate
-                  <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
-                  </div>
-                </Link>
+                 {/* CTA Button */}
+          <Link href="/contact" className="text-white cursor-pointer px-6 sm:px-12 md:px-6 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          Let&apos;s Collaborate
+           <img src="/Background (1).png" alt="" className="inline ml-3 mb-1" />
+          </Link>
               </div>
 </div>
  </section>

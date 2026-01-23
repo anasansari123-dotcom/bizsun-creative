@@ -412,15 +412,9 @@ export default function JoinOurTeam() {
 
             {/* Apply Now Button */}
             <div className="text-center px-4">
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-full text-sm sm:text-base md:text-lg font-semibold text-white shadow-lg hover:opacity-90 hover:scale-105 transition-all duration-300 cursor-pointer"
-                style={{
-                  background: "linear-gradient(to right, #64CB71, #418F40)",
-                }}
-              >
-                Apply Now
-              </Link>
+            <Link href="/contact" className="text-white px-6 sm:px-12 md:px-17 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400 inline-block" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+            Apply Now
+          </Link>
             </div>
           </div>
         </section>

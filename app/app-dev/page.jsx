@@ -92,9 +92,9 @@ export default function Home() {
           <p className="text-base md:text-lg text-[#6B6B6B] max-w-4xl mb-12 leading-relaxed animate-fadeInUp animation-delay-300">
 We build scalable, secure, and high-performance web and mobile applications that help businesses grow faster and smarter. From intuitive mobile apps to robust web platforms and custom backend systems, our development solutions are designed to deliver speed, stability, and seamless user experiences. At Bizsun Creative, we don’t just develop products — we create digital systems that support long-term business success.  </p>
           {/* CTA Button */}
-          <button className="text-white px-17 py-5 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          <Link href="/contact" className="text-white px-17 py-5 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400 inline-block" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
             Get in Touch
-          </button>
+          </Link>
 
           {/* Trusted By Section */}
         </main>
@@ -176,12 +176,11 @@ Is Your App or Website Limiting Your Business Growth?                  </h2>
 We Build Technology That Works for Your Business                  </h2>
                   <p className="text-lg text-gray-700 mb-8 leading-relaxed">
 Our development team focuses on building future-ready digital products that are fast, scalable, and aligned with your business goals. Whether you need a mobile app, web application, or backend system, we design and develop solutions that grow with your business.                  </p>
-                  <button 
-                    className="text-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl"
-                    style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}
-                  >
-                    Questions? Talk to us
-                  </button>
+  {/* CTA Button */}
+  <Link href="/contact" className="text-white cursor-pointer px-6 sm:px-12 md:px-6 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          Questions? Talk to us
+
+          </Link>
                    <h2 className="text-4xl md:text-5xl lg:text-3xl font-bold text-black mb-6 mt-10 leading-tight">
 Our Approach to App & Web Development
                   </h2>
@@ -618,14 +617,11 @@ Our development process is driven by clarity, collaboration, and performance. We
                 <p className="text-base md:text-lg text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed">
                   From strategy to execution, we help brands grow with clarity, consistency, and thoughtfully crafted digital solutions.
                 </p>
-                <button className="bg-green-200 w-[20%] text-gray-800 px-8 py-4 rounded-full font-semibold hover:bg-green-300 transition-all duration-300 flex items-center gap-3 mx-auto hover:scale-105 hover:shadow-lg">
-                  Let&apos;s Collaborate
-                  <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1">
-                    <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
-                  </div>
-                </button>
+                    {/* CTA Button */}
+          <Link href="/contact" className="text-white cursor-pointer px-6 sm:px-12 md:px-6 py-3 sm:py-4 md:py-5 rounded-full text-sm sm:text-base md:text-lg font-semibold transition-all duration-300 shadow-lg hover:opacity-90 hover:scale-105 hover:shadow-xl animate-fadeInUp animation-delay-400" style={{ background: 'linear-gradient(to right, #64CB71, #418F40)' }}>
+          Let&apos;s Collaborate
+           <img src="/Background (1).png" alt="" className="inline ml-3 mb-1" />
+          </Link>
               </div>
 </div>
  </section>
